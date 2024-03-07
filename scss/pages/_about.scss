@@ -63,7 +63,7 @@
 
 .btnMain {
     position: relative;
-    color: var(--main-blue);
+    color: var(--main-blue) !important;
     border: 2px solid var(--main-blue);
     padding: 8px 20px;
     background-color: transparent;
@@ -74,6 +74,10 @@
     z-index: 7;
     font-weight: 500;
 
+}
+
+.btnMain .textA {
+    color: var(--main-blue) !important;
 }
 
 .btnMain::before {

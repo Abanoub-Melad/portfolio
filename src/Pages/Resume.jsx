@@ -59,7 +59,9 @@ function Resume() {
                                                 <a
                                                     target='blank'
                                                     href='https://www.neoneg.com/'>NEON Company</a></span>
-                                            <p >I underwent technical training at NEON Company where I gained hands-on experience in various aspects of web development.</p>
+                                            <p >I underwent technical training at   <a
+                                                    target='blank'
+                                                    href='https://www.neoneg.com/'>NEON Company</a> where I gained hands-on experience in various aspects of web development.</p>
                                         </div>
                                         <span className='yearEx'>
                                             <span className='toEx'>2024</span>

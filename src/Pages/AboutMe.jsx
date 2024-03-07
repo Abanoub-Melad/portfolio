@@ -1,9 +1,7 @@
-import PageAnimation from '../Components/PageAnimation';
-
+import PageAnimation from "../Components/PageAnimation";
 
 function AboutMe() {
   return (
-
     <>
       {/* <motion.div
         id="about"
@@ -33,59 +31,91 @@ function AboutMe() {
       > */}
 
       <PageAnimation>
-
         <section className="sectionAll " id="about">
           <div className="container">
             <div className="allContent  d-flex justify-content-between ">
               <h1 className="allTitle">About Me.</h1>
-              <svg className="allIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
-                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
-                <g><g><g><path d="M116.5,10.6c-25.1,4.8-45,24.3-50.2,49.5c-2.7,12.7-0.9,26.9,4.7,39.3c5.3,11.6,16.2,23,27.5,28.8l3.1,1.6l-2.6,0.7c-18.5,5-34.3,12.8-47.9,23.6c-5.3,4.2-13.7,12.6-18,18C19.3,189.5,10,212.9,10,230.6c0,5.8,0.1,6.1,1.6,8.5c1.9,3,5.3,5.7,8,6.5c1.4,0.4,36.5,0.5,109.4,0.4l107.5-0.2l2.4-1.4c5.5-3.3,7.5-7.7,7-15.7c-0.6-10.7-4.5-24.5-10.3-36.3c-15.3-30.8-42.9-52.6-78.8-62l-2.6-0.7l4.5-2.5c13.7-7.7,23.8-19.8,28.8-34.8c7.7-22.9,1.8-47.4-15.4-64.4c-5.7-5.7-10.3-8.9-17.8-12.5c-8.6-4.1-14-5.3-24.9-5.5C123.1,9.9,119.2,10,116.5,10.6z M141.2,26.2c17.2,5,30,18.8,33.9,36.3c1.3,6,1.1,15.6-0.6,21.9c-5.5,21.3-24.8,36.3-46.8,36.3c-4.8,0-12.9-1.5-17.5-3.4c-14.2-5.5-25.1-18-29-32.9c-1.6-6.3-1.8-15.8-0.5-21.9c4.4-19.4,19.7-34.1,39.3-37.6c1.4-0.3,5.7-0.4,9.5-0.3C135.2,24.7,137.4,25,141.2,26.2z M140.4,142.5c24.3,3,45.2,12.8,62.2,29.2c11.8,11.4,19.8,24.2,24.8,39.4c1.8,5.6,4.2,16.6,4.2,19.5c0,1-2.1,1-103.6,1c-101.5,0-103.6,0-103.6-1c0-3,2.3-13.9,4.2-19.5c7.3-22.5,22.8-41.5,44.4-54.5c11.5-6.9,27.3-12.2,41.8-14C119.8,142,135.2,141.9,140.4,142.5z" /></g></g></g>
+              <svg
+                className="allIcon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 256 256"
+                enable-background="new 0 0 256 256"
+                xml:space="preserve"
+              >
+                <metadata>
+                  {" "}
+                  Svg Vector Icons : http://www.onlinewebfonts.com/icon{" "}
+                </metadata>
+                <g>
+                  <g>
+                    <g>
+                      <path d="M116.5,10.6c-25.1,4.8-45,24.3-50.2,49.5c-2.7,12.7-0.9,26.9,4.7,39.3c5.3,11.6,16.2,23,27.5,28.8l3.1,1.6l-2.6,0.7c-18.5,5-34.3,12.8-47.9,23.6c-5.3,4.2-13.7,12.6-18,18C19.3,189.5,10,212.9,10,230.6c0,5.8,0.1,6.1,1.6,8.5c1.9,3,5.3,5.7,8,6.5c1.4,0.4,36.5,0.5,109.4,0.4l107.5-0.2l2.4-1.4c5.5-3.3,7.5-7.7,7-15.7c-0.6-10.7-4.5-24.5-10.3-36.3c-15.3-30.8-42.9-52.6-78.8-62l-2.6-0.7l4.5-2.5c13.7-7.7,23.8-19.8,28.8-34.8c7.7-22.9,1.8-47.4-15.4-64.4c-5.7-5.7-10.3-8.9-17.8-12.5c-8.6-4.1-14-5.3-24.9-5.5C123.1,9.9,119.2,10,116.5,10.6z M141.2,26.2c17.2,5,30,18.8,33.9,36.3c1.3,6,1.1,15.6-0.6,21.9c-5.5,21.3-24.8,36.3-46.8,36.3c-4.8,0-12.9-1.5-17.5-3.4c-14.2-5.5-25.1-18-29-32.9c-1.6-6.3-1.8-15.8-0.5-21.9c4.4-19.4,19.7-34.1,39.3-37.6c1.4-0.3,5.7-0.4,9.5-0.3C135.2,24.7,137.4,25,141.2,26.2z M140.4,142.5c24.3,3,45.2,12.8,62.2,29.2c11.8,11.4,19.8,24.2,24.8,39.4c1.8,5.6,4.2,16.6,4.2,19.5c0,1-2.1,1-103.6,1c-101.5,0-103.6,0-103.6-1c0-3,2.3-13.9,4.2-19.5c7.3-22.5,22.8-41.5,44.4-54.5c11.5-6.9,27.3-12.2,41.8-14C119.8,142,135.2,141.9,140.4,142.5z" />
+                    </g>
+                  </g>
+                </g>
               </svg>
             </div>
             <div className="aboutPrg row   ">
               <div className="col-md-7 ">
                 <h2 className="pb-3">Front-End Developer</h2>
-                <p className="leشad lh-lg">
-                  Let me give you a short intro about myself. I’m a prolific front end
-                  developer from Egypt. who cares deeply about user experience. intense
-                  passion for UI design and new technologies, I learned Web Development
-                  from various online courses to gain knowledge. I’m always seeking for
-                  new challenges that allows me grow professionally, while being able to
-                  utilize my skills . In my developing journey, I have worked on several
-                  projects, whether through companies or freelancers. My main focus is to
-                  bring profit to both the business owner and customer.
+                <p className=" lh-lg">
+                  Let me give you a short intro about myself. I’m a prolific
+                  front end developer from Egypt. who cares deeply about user
+                  experience. intense passion for UI design and new
+                  technologies, I learned Web Development from various online
+                  courses to gain knowledge. I’m always seeking for new
+                  challenges that allows me grow professionally, while being
+                  able to utilize my skills . In my developing journey, I have
+                  worked on several projects, whether through companies or
+                  freelancers. My main focus is to bring profit to both the
+                  business owner and customer.
                 </p>
               </div>
               <div className="col-md-4 offset-md-1">
                 <h2 className="pb-3">Personal Information</h2>
                 <ul className="p-md-0 ">
                   <li className="mb-3 lh-1">
-                    <span className="title">Name :</span><span className="value">Abanoub melad</span>
+                    <span className="title">Name :</span>
+                    <span className="value">Abanoub melad</span>
                   </li>
                   <li className="mb-3 lh-1">
-                    <span className="title">Age :</span><span className="value">26 Years</span>
+                    <span className="title">Age :</span>
+                    <span className="value">26 Years</span>
                   </li>
                   <li className="mb-3 lh-1">
-                    <span className="title">Residence :</span><span className="value">cairo, Egypt</span>
+                    <span className="title">Residence :</span>
+                    <span className="value">cairo, Egypt</span>
                   </li>
                   <li className="mb-3 lh-1">
-                    <span className="title">Address :</span><span className="value">15 ezbet el nakhl </span>
+                    <span className="title">Address :</span>
+                    <span className="value">15 ezbet el nakhl </span>
                   </li>
                   <li className="mb-3 lh-1">
-                    <span className="title">Email :</span><span className="value">abanoubmelad@gmail.com</span>
+                    <span className="title">Email :</span>
+                    <span className="value">abanoubmelad@gmail.com</span>
                   </li>
                   <li className="mb-3 lh-1">
-                    <span className="title">Phone :</span><span className="value">01207525680</span>
+                    <span className="title">Phone :</span>
+                    <span className="value">01207525680</span>
                   </li>
                   <li className="mb-3 lh-1">
-                    <span className="title">Freelance :</span><span className="value">Available</span>
+                    <span className="title">Freelance :</span>
+                    <span className="value">Available</span>
                   </li>
-                  <button
-
-                    className="btnMain mt-3 "><a
-                      download target='blank'
-                      href='https://drive.google.com/file/d/1ZDIeidx6kL8Gd7bBOGqjCyHvrfcNyYj0/view?usp=drive_link'>download resume</a></button>
+                  <button className="btnMain mt-3 ">
+                    <a
+                      className="textA"
+                      download
+                      target="blank"
+                      href="https://drive.google.com/file/d/1ZDIeidx6kL8Gd7bBOGqjCyHvrfcNyYj0/view?usp=drive_link"
+                    >
+                      download resume
+                    </a>
+                  </button>
                 </ul>
               </div>
             </div>
@@ -95,13 +125,19 @@ function AboutMe() {
               </div>
               <div className="row pt-5">
                 <div className="col-md-4 text-center">
-                  <span><svg className="iconAbout" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 419.931 419.931"
-                  >
-                    <g>
+                  <span>
+                    <svg
+                      className="iconAbout"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 419.931 419.931"
+                    >
                       <g>
                         <g>
-                          <path d="M282.895,352.367c-2.176-1.324-4.072-3.099-5.579-5.25c-0.696-0.992-1.284-2.041-1.771-3.125H28.282V100.276h335.624
+                          <g>
+                            <path
+                              d="M282.895,352.367c-2.176-1.324-4.072-3.099-5.579-5.25c-0.696-0.992-1.284-2.041-1.771-3.125H28.282V100.276h335.624
 				v159.138c7.165,0.647,13.177,5.353,15.701,11.797c2.235-1.225,4.726-1.982,7.344-2.213c1.771-0.154,3.53-0.044,5.236,0.293
 				V39.561c0-12.996-10.571-23.569-23.566-23.569H23.568C10.573,15.992,0,26.565,0,39.561v309.146
 				c0,12.996,10.573,23.568,23.568,23.568h257.179c-2.007-4.064-2.483-8.652-1.302-13.066
@@ -109,8 +145,10 @@ function AboutMe() {
 				c4.807,0,8.702,3.896,8.702,8.703v9.863c0,4.806-3.896,8.702-8.702,8.702h-8.702c-4.807,0-8.702-3.896-8.702-8.702V55.569z
 				M297.56,55.569c0-4.806,3.896-8.703,8.702-8.703h8.703c4.807,0,8.702,3.896,8.702,8.703v9.863c0,4.806-3.896,8.702-8.702,8.702
 				h-8.703c-4.806,0-8.702-3.896-8.702-8.702V55.569z M257.094,55.569c0-4.806,3.897-8.703,8.702-8.703h8.702
-				c4.807,0,8.703,3.896,8.703,8.703v9.863c0,4.806-3.896,8.702-8.703,8.702h-8.702c-4.805,0-8.702-3.896-8.702-8.702V55.569z"/>
-                          <path d="M419.875,335.77l-2.615-14.83c-0.353-1.997-2.256-3.331-4.255-2.979l-13.188,2.324c-1.583-3.715-3.605-7.195-6.005-10.38
+				c4.807,0,8.703,3.896,8.703,8.703v9.863c0,4.806-3.896,8.702-8.703,8.702h-8.702c-4.805,0-8.702-3.896-8.702-8.702V55.569z"
+                            />
+                            <path
+                              d="M419.875,335.77l-2.615-14.83c-0.353-1.997-2.256-3.331-4.255-2.979l-13.188,2.324c-1.583-3.715-3.605-7.195-6.005-10.38
 				l8.614-10.268c0.626-0.744,0.931-1.709,0.847-2.68c-0.086-0.971-0.554-1.867-1.3-2.494l-11.534-9.68
 				c-0.746-0.626-1.713-0.93-2.683-0.845c-0.971,0.085-1.867,0.552-2.493,1.298l-8.606,10.26c-3.533-1.8-7.312-3.188-11.271-4.104
 				v-13.392c0-2.028-1.645-3.674-3.673-3.674h-15.06c-2.027,0-3.673,1.646-3.673,3.674v13.392
@@ -128,44 +166,111 @@ function AboutMe() {
 				c0.318,0,0.64-0.043,0.951-0.125c0.941-0.252,1.743-0.869,2.229-1.711l7.529-13.043c0.486-0.842,0.619-1.846,0.367-2.787
 				c-0.253-0.938-0.868-1.742-1.712-2.229l-11.598-6.693c1.146-3.768,1.856-7.724,2.071-11.812l13.198-2.327
 				c0.96-0.169,1.812-0.712,2.37-1.511C419.825,337.715,420.044,336.729,419.875,335.77z M354.184,359.336
-				c-11.155,0-20.2-9.045-20.2-20.201s9.046-20.2,20.2-20.2c11.156,0,20.201,9.044,20.201,20.2S365.34,359.336,354.184,359.336z"/>
-                          <g>
-                            <path d="M164.695,235.373c0-4.752-2.785-9.117-7.096-11.119l-39.455-18.332l39.456-18.334c4.31-2.004,7.095-6.368,7.095-11.118
+				c-11.155,0-20.2-9.045-20.2-20.201s9.046-20.2,20.2-20.2c11.156,0,20.201,9.044,20.201,20.2S365.34,359.336,354.184,359.336z"
+                            />
+                            <g>
+                              <path
+                                d="M164.695,235.373c0-4.752-2.785-9.117-7.096-11.119l-39.455-18.332l39.456-18.334c4.31-2.004,7.095-6.368,7.095-11.118
 					v-0.319c0-4.21-2.119-8.075-5.665-10.334c-1.962-1.253-4.247-1.916-6.606-1.916c-1.778,0-3.563,0.391-5.16,1.133l-63.078,29.333
 					c-4.309,2.004-7.092,6.368-7.092,11.117v0.877c0,4.743,2.782,9.104,7.093,11.118l63.084,29.336
 					c1.631,0.755,3.368,1.138,5.162,1.138c2.338,0,4.616-0.664,6.597-1.924c3.548-2.268,5.666-6.13,5.666-10.335L164.695,235.373
-					L164.695,235.373z"/>
-                            <path d="M226.932,134.012c-2.301-3.15-6.002-5.03-9.901-5.03h-0.314c-5.354,0-10.048,3.425-11.679,8.516L163.478,266.27
+					L164.695,235.373z"
+                              />
+                              <path
+                                d="M226.932,134.012c-2.301-3.15-6.002-5.03-9.901-5.03h-0.314c-5.354,0-10.048,3.425-11.679,8.516L163.478,266.27
 					c-1.183,3.718-0.517,7.813,1.781,10.962c2.301,3.148,6.002,5.029,9.901,5.029h0.315c5.352,0,10.043-3.426,11.672-8.516
-					l41.555-128.762C229.896,141.268,229.234,137.167,226.932,134.012z"/>
-                            <path d="M308.001,194.366l-63.079-29.333c-1.592-0.74-3.374-1.131-5.152-1.131c-2.358,0-4.644,0.661-6.605,1.912
+					l41.555-128.762C229.896,141.268,229.234,137.167,226.932,134.012z"
+                              />
+                              <path
+                                d="M308.001,194.366l-63.079-29.333c-1.592-0.74-3.374-1.131-5.152-1.131c-2.358,0-4.644,0.661-6.605,1.912
 					c-3.552,2.263-5.671,6.127-5.671,10.337v0.319c0,4.746,2.783,9.111,7.097,11.123l39.454,18.33l-39.455,18.331
 					c-4.311,2.002-7.096,6.367-7.096,11.119v0.321c0,4.205,2.119,8.066,5.669,10.336c1.974,1.258,4.254,1.923,6.595,1.923
 					c1.792,0,3.527-0.383,5.169-1.141l63.082-29.336c4.307-2.009,7.088-6.371,7.088-11.114v-0.877
-					C315.094,200.735,312.311,196.371,308.001,194.366z"/>
+					C315.094,200.735,312.311,196.371,308.001,194.366z"
+                              />
+                            </g>
                           </g>
                         </g>
                       </g>
-                    </g>
-                  </svg></span>
+                    </svg>
+                  </span>
                   <h4>Web Development</h4>
-                  <p>I highlight my expertise in building responsive, user-friendly, and feature-rich web solutions tailored to meet the specific needs of clients...</p>
+                  <p>
+                    I highlight my expertise in building responsive,
+                    user-friendly, and feature-rich web solutions tailored to
+                    meet the specific needs of clients...
+                  </p>
                 </div>
                 <div className="col-md-4 text-center">
-                  <span><svg className="iconAbout" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
-                    <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
-                    <g><g><g><path d="M17.2,10.3c-2.4,0.7-4.5,2.4-5.8,4.5L10.1,17L10,92.6c0,52.8,0,76.2,0.4,77.4c0.6,2.3,3.7,5.7,5.8,6.4C17.4,176.8,29,177,58,177l40.2,0l0,4.9c-0.1,4.3-0.4,5.9-2.3,12.7c-1.2,4.2-2.8,8.9-3.6,10.4c-1.8,3.5-4.8,6.9-5.8,6.6c-0.4-0.1-2.2-0.1-4.1,0l-3.3,0.3l-0.2,2.2l-0.1,2.3h22h22v-2.4v-2.4h-14c-7.7,0-14.2-0.1-14.3-0.3c-0.2-0.2,0.1-0.9,0.6-1.6c2.5-3.6,5.5-11.3,6.8-17.7c0.5-2.2,0.9-6.4,1.1-9.5l0.3-5.5l8.5,0c4.7,0,9.1-0.1,9.8-0.1c1.2,0,1.2-0.1,1.2-2.4v-2.3H70.7c-51,0-52.3,0-53.7-0.9c-1-0.6-1.6-1.4-1.9-2.6c-0.2-1-0.4-8.1-0.4-16.3l0.1-14.5l54.1-0.1l54.1-0.1v-2.3V133L68.9,133l-54.1-0.1V75.5V18.2l1-1.3c0.5-0.7,1.7-1.5,2.5-1.8c1.1-0.4,31.2-0.5,110.4-0.5c117.3,0,110.1-0.1,111.8,2.4c0.7,1.2,0.8,4.8,0.8,58.5v57.2l-4.9,0.1l-5,0.1v2.3v2.3h4.8h4.8l0.3,2.2c0.5,4.1,0,28.9-0.6,30c-0.9,1.7-2.9,2.4-6.3,2.4h-3v2.3v2.3h3.7c2.1,0,4.4-0.3,5.2-0.6c2-0.9,4.8-4.1,5.4-6.2c0.3-1.3,0.4-25,0.4-77.4L245.8,17l-1.3-2.2c-0.8-1.4-2-2.6-3.5-3.5l-2.2-1.3L128.7,10C68.1,10,17.9,10.1,17.2,10.3z" /><path d="M138.4,79.1c-2.3,0.1-4.6,0.5-5.1,0.8c-1.7,1-4.3,4.2-4.8,6c-0.3,1.3-0.4,25-0.4,77.4l0.1,75.6l1.3,2.2c0.8,1.4,2,2.6,3.5,3.5l2.2,1.3l41.1,0.1c30,0.1,41.6,0,43-0.4c1.1-0.3,2.8-1.2,3.8-2.1c3.6-3.1,3.3,3.6,3.2-81.9L226,85.2l-1.4-2c-0.8-1.2-2.3-2.4-3.6-3.1l-2.2-1.2l-38.2,0C159.7,78.8,140.7,78.9,138.4,79.1z M219.2,84.4c1.9,1.3,2.4,3,2.4,8.7v5.3l-44.4-0.1l-44.4-0.1v-4.9c0-6.2,0.3-7.6,2.2-8.7c1.4-0.9,2.6-0.9,42.3-0.9C213.6,83.7,218.3,83.8,219.2,84.4z M219.9,103.3l1.7,0.3v51.6v51.6l-44.4-0.1l-44.4-0.1l0-51.4c0-28.3,0-51.6,0.1-51.7C133.1,103.1,217.5,103,219.9,103.3z M221.5,224.8l-0.1,13.3l-1.1,1.2c-0.6,0.7-1.9,1.4-2.8,1.6c-0.9,0.2-19.6,0.4-41.4,0.3c-39.6,0-39.8,0-41.1-1c-2.1-1.6-2.4-3.1-2.4-16.1c0-6.6,0.1-12.1,0.2-12.4c0.1-0.2,20.1-0.3,44.5-0.3h44.3L221.5,224.8z" /><path d="M174.4,217c-2,0.6-4.2,2.3-5.4,4.1c-1.5,2.3-1.8,7.1-0.5,9.6c1.8,3.5,4.7,5.3,8.6,5.3c3.3,0,5.1-0.8,7.2-3.1c2.9-3.1,3.3-7.2,1.3-11.1c-1-2-2-2.9-4.1-4C179.8,216.8,176.2,216.4,174.4,217z M180.6,222.9c1.1,1.1,1.3,1.8,1.3,3.3c0,2.4-0.6,3.5-2.3,4.4c-2.3,1.2-4.1,0.9-5.8-0.9c-1.8-1.8-2-3.6-0.9-5.8c0.9-1.8,1.9-2.3,4.3-2.3C178.9,221.6,179.5,221.9,180.6,222.9z" /></g></g></g>
-                  </svg></span>
+                  <span>
+                    <svg
+                      className="iconAbout"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 256 256"
+                      enable-background="new 0 0 256 256"
+                      xml:space="preserve"
+                    >
+                      <metadata>
+                        {" "}
+                        Svg Vector Icons : http://www.onlinewebfonts.com/icon{" "}
+                      </metadata>
+                      <g>
+                        <g>
+                          <g>
+                            <path d="M17.2,10.3c-2.4,0.7-4.5,2.4-5.8,4.5L10.1,17L10,92.6c0,52.8,0,76.2,0.4,77.4c0.6,2.3,3.7,5.7,5.8,6.4C17.4,176.8,29,177,58,177l40.2,0l0,4.9c-0.1,4.3-0.4,5.9-2.3,12.7c-1.2,4.2-2.8,8.9-3.6,10.4c-1.8,3.5-4.8,6.9-5.8,6.6c-0.4-0.1-2.2-0.1-4.1,0l-3.3,0.3l-0.2,2.2l-0.1,2.3h22h22v-2.4v-2.4h-14c-7.7,0-14.2-0.1-14.3-0.3c-0.2-0.2,0.1-0.9,0.6-1.6c2.5-3.6,5.5-11.3,6.8-17.7c0.5-2.2,0.9-6.4,1.1-9.5l0.3-5.5l8.5,0c4.7,0,9.1-0.1,9.8-0.1c1.2,0,1.2-0.1,1.2-2.4v-2.3H70.7c-51,0-52.3,0-53.7-0.9c-1-0.6-1.6-1.4-1.9-2.6c-0.2-1-0.4-8.1-0.4-16.3l0.1-14.5l54.1-0.1l54.1-0.1v-2.3V133L68.9,133l-54.1-0.1V75.5V18.2l1-1.3c0.5-0.7,1.7-1.5,2.5-1.8c1.1-0.4,31.2-0.5,110.4-0.5c117.3,0,110.1-0.1,111.8,2.4c0.7,1.2,0.8,4.8,0.8,58.5v57.2l-4.9,0.1l-5,0.1v2.3v2.3h4.8h4.8l0.3,2.2c0.5,4.1,0,28.9-0.6,30c-0.9,1.7-2.9,2.4-6.3,2.4h-3v2.3v2.3h3.7c2.1,0,4.4-0.3,5.2-0.6c2-0.9,4.8-4.1,5.4-6.2c0.3-1.3,0.4-25,0.4-77.4L245.8,17l-1.3-2.2c-0.8-1.4-2-2.6-3.5-3.5l-2.2-1.3L128.7,10C68.1,10,17.9,10.1,17.2,10.3z" />
+                            <path d="M138.4,79.1c-2.3,0.1-4.6,0.5-5.1,0.8c-1.7,1-4.3,4.2-4.8,6c-0.3,1.3-0.4,25-0.4,77.4l0.1,75.6l1.3,2.2c0.8,1.4,2,2.6,3.5,3.5l2.2,1.3l41.1,0.1c30,0.1,41.6,0,43-0.4c1.1-0.3,2.8-1.2,3.8-2.1c3.6-3.1,3.3,3.6,3.2-81.9L226,85.2l-1.4-2c-0.8-1.2-2.3-2.4-3.6-3.1l-2.2-1.2l-38.2,0C159.7,78.8,140.7,78.9,138.4,79.1z M219.2,84.4c1.9,1.3,2.4,3,2.4,8.7v5.3l-44.4-0.1l-44.4-0.1v-4.9c0-6.2,0.3-7.6,2.2-8.7c1.4-0.9,2.6-0.9,42.3-0.9C213.6,83.7,218.3,83.8,219.2,84.4z M219.9,103.3l1.7,0.3v51.6v51.6l-44.4-0.1l-44.4-0.1l0-51.4c0-28.3,0-51.6,0.1-51.7C133.1,103.1,217.5,103,219.9,103.3z M221.5,224.8l-0.1,13.3l-1.1,1.2c-0.6,0.7-1.9,1.4-2.8,1.6c-0.9,0.2-19.6,0.4-41.4,0.3c-39.6,0-39.8,0-41.1-1c-2.1-1.6-2.4-3.1-2.4-16.1c0-6.6,0.1-12.1,0.2-12.4c0.1-0.2,20.1-0.3,44.5-0.3h44.3L221.5,224.8z" />
+                            <path d="M174.4,217c-2,0.6-4.2,2.3-5.4,4.1c-1.5,2.3-1.8,7.1-0.5,9.6c1.8,3.5,4.7,5.3,8.6,5.3c3.3,0,5.1-0.8,7.2-3.1c2.9-3.1,3.3-7.2,1.3-11.1c-1-2-2-2.9-4.1-4C179.8,216.8,176.2,216.4,174.4,217z M180.6,222.9c1.1,1.1,1.3,1.8,1.3,3.3c0,2.4-0.6,3.5-2.3,4.4c-2.3,1.2-4.1,0.9-5.8-0.9c-1.8-1.8-2-3.6-0.9-5.8c0.9-1.8,1.9-2.3,4.3-2.3C178.9,221.6,179.5,221.9,180.6,222.9z" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
                   <h4>Responsive Design</h4>
-                  <p>emphasize my ability to create websites and web applications that adapt seamlessly to various screen sizes and devices, providing an optimal viewing experience for users I .</p>
+                  <p>
+                    emphasize my ability to create websites and web applications
+                    that adapt seamlessly to various screen sizes and devices,
+                    providing an optimal viewing experience for users I .
+                  </p>
                 </div>
                 <div className="col-md-4 text-center">
-                  <span><svg className="iconAbout" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
-                    <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
-                    <g><g><path d="M128,246c-5.9,0-11.4-1.3-15.6-3.8l-75.6-43.6c-4.2-2.4-8.1-6.6-11.1-11.6s-4.6-10.5-4.6-15.4V84.4c0-4.8,1.6-10.3,4.6-15.4s6.9-9.2,11.1-11.6l75.6-43.6c4.2-2.4,9.7-3.8,15.6-3.8c5.9,0,11.4,1.3,15.6,3.8l75.6,43.6c4.2,2.4,8.1,6.6,11.1,11.6c2.9,5.1,4.6,10.5,4.6,15.4v87.2c0,4.8-1.6,10.3-4.6,15.4c-2.9,5.1-6.9,9.2-11.1,11.6l-75.6,43.6C139.4,244.7,133.9,246,128,246L128,246z M128,15.2c-4.9,0-9.7,1.1-13,3.1L39.4,61.8c-7.1,4.1-13,14.4-13,22.6v87.2c0,8.2,6,18.5,13,22.6l75.6,43.6c3.4,2,8.1,3.1,13,3.1c4.9,0,9.7-1.1,13-3.1l75.6-43.6c7.1-4.1,13-14.4,13-22.6V84.4c0-8.2-6-18.5-13-22.6L141,18.2C137.7,16.3,132.9,15.2,128,15.2L128,15.2z" /><path d="M152.8,128c0,27.8-22.6,50.4-50.4,50.4C74.5,178.4,52,155.8,52,128V89.6c0-6.6,5.3-11.9,11.9-11.9c6.6,0,11.9,5.3,11.9,11.9V128c0,14.6,11.9,26.5,26.5,26.5c14.6,0,26.5-11.9,26.5-26.5V89.6c0-6.6,5.3-11.9,11.9-11.9c6.6,0,11.9,5.3,11.9,11.9V128L152.8,128L152.8,128z" /><path d="M204,166.4c0,6.6-5.3,11.9-11.9,11.9c-6.6,0-11.9-5.3-11.9-11.9V89.6c0-6.6,5.3-11.9,11.9-11.9c6.6,0,11.9,5.3,11.9,11.9V166.4z" /></g></g>
-                  </svg></span>
+                  <span>
+                    <svg
+                      className="iconAbout"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 256 256"
+                      enable-background="new 0 0 256 256"
+                      xml:space="preserve"
+                    >
+                      <metadata>
+                        {" "}
+                        Svg Vector Icons : http://www.onlinewebfonts.com/icon{" "}
+                      </metadata>
+                      <g>
+                        <g>
+                          <path d="M128,246c-5.9,0-11.4-1.3-15.6-3.8l-75.6-43.6c-4.2-2.4-8.1-6.6-11.1-11.6s-4.6-10.5-4.6-15.4V84.4c0-4.8,1.6-10.3,4.6-15.4s6.9-9.2,11.1-11.6l75.6-43.6c4.2-2.4,9.7-3.8,15.6-3.8c5.9,0,11.4,1.3,15.6,3.8l75.6,43.6c4.2,2.4,8.1,6.6,11.1,11.6c2.9,5.1,4.6,10.5,4.6,15.4v87.2c0,4.8-1.6,10.3-4.6,15.4c-2.9,5.1-6.9,9.2-11.1,11.6l-75.6,43.6C139.4,244.7,133.9,246,128,246L128,246z M128,15.2c-4.9,0-9.7,1.1-13,3.1L39.4,61.8c-7.1,4.1-13,14.4-13,22.6v87.2c0,8.2,6,18.5,13,22.6l75.6,43.6c3.4,2,8.1,3.1,13,3.1c4.9,0,9.7-1.1,13-3.1l75.6-43.6c7.1-4.1,13-14.4,13-22.6V84.4c0-8.2-6-18.5-13-22.6L141,18.2C137.7,16.3,132.9,15.2,128,15.2L128,15.2z" />
+                          <path d="M152.8,128c0,27.8-22.6,50.4-50.4,50.4C74.5,178.4,52,155.8,52,128V89.6c0-6.6,5.3-11.9,11.9-11.9c6.6,0,11.9,5.3,11.9,11.9V128c0,14.6,11.9,26.5,26.5,26.5c14.6,0,26.5-11.9,26.5-26.5V89.6c0-6.6,5.3-11.9,11.9-11.9c6.6,0,11.9,5.3,11.9,11.9V128L152.8,128L152.8,128z" />
+                          <path d="M204,166.4c0,6.6-5.3,11.9-11.9,11.9c-6.6,0-11.9-5.3-11.9-11.9V89.6c0-6.6,5.3-11.9,11.9-11.9c6.6,0,11.9,5.3,11.9,11.9V166.4z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
                   <h4>Web Development UI</h4>
-                  <p> I emphasize Web Development UI as an essential aspect of my services. I showcase my expertise in creating user-friendly and visually appealing interfaces for websites and web applications, ensuring an optimal user experience across different devices and screen sizes.</p>
+                  <p>
+                    {" "}
+                    I emphasize Web Development UI as an essential aspect of my
+                    services. I showcase my expertise in creating user-friendly
+                    and visually appealing interfaces for websites and web
+                    applications, ensuring an optimal user experience across
+                    different devices and screen sizes.
+                  </p>
                 </div>
               </div>
             </div>
@@ -174,7 +279,6 @@ function AboutMe() {
       </PageAnimation>
 
       {/* </motion.div> */}
-
     </>
   );
 }
