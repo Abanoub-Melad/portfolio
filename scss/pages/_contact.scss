@@ -1,0 +1,63 @@
+.inputGroup {
+    position: relative;
+}
+
+.inputGroup .inputText {
+    width: 100%;
+    padding: 7px 10px;
+    border: 2px solid #999;
+    outline: none;
+    background: transparent;
+    color: $bg-white;
+
+    @include md {
+        margin: 20px 0 20px 0;
+        width: 100%;
+    }
+}
+
+textarea {
+    height: 190px;
+}
+
+.inputText:focus {
+    border: 2px solid $bg-white;
+}
+
+.labelText {
+    position: absolute;
+    top: -4px;
+    left: 4px;
+    color: $bg-white;
+    padding: 12px 0 0 15px;
+    transition: all 0.2s ease-in;
+
+    @include md {
+        top: 20px;
+        left: 10px;
+    }
+}
+
+// .inputText:is(:focus)+.labelText {
+.inputText:focus+.labelText {
+    top: -36px;
+    left: -16px;
+    transition: all .2s ease;
+
+    @include md {
+        top: -20px;
+        left: -10px;
+    }
+}
+
+.iconContact {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    fill: var(--main-blue);
+}
+
+// .massageForm {
+//     color: var(--main-blue);
+//     margin: auto;
+// }

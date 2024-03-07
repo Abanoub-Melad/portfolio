@@ -1,0 +1,36 @@
+// Minxins
+@import "./media-query";
+@import "./flex";
+@import "./grid";
+
+
+// @mixin ease {
+//     transition: all 1s ease;
+// }
+
+// @mixin mainBg($url: "../../images/portfolio-1.jpg"){
+//    background-image: url($url);
+//    background-position: center;
+//    background-size: cover;
+//    background-repeat: no-repeat;
+// }
+
+// @mixin overlay($bg: rgba(125, 69, 69, 0.386)){
+//     position: relative;
+//     &::after{
+//         content: '';
+//         background-color: $bg;
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         // left: 0;
+//         // right: 0;
+//         // bottom: 0;
+//         // top: 0;
+//         inset: 0;
+//     }
+//     & *{
+//         position: relative;
+//         z-index: 2;
+//     }
+// }

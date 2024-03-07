@@ -1,0 +1,122 @@
+.containerUl {
+    margin: 20px 0 50px;
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 50px;
+    width: 100%;
+}
+
+
+.eduction .titleContent {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--main-blue);
+}
+
+.eduction .prgContent {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.eduction .lineDec {
+    border-left: 2px solid var(--main-blue);
+    padding-left: 16px;
+    cursor: auto;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.eduction .lineDec::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: -9px;
+    left: -6px;
+    border: 2px solid var(--main-blue);
+    border-radius: 50%;
+}
+
+.eduction .lineDec::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    bottom: -9px;
+    left: -6px;
+    border: 2px solid var(--main-blue);
+    border-radius: 50%;
+}
+
+.eduction .lineDec .year .to {
+    position: absolute;
+
+    top: -18px;
+    left: -45px;
+}
+
+.eduction .lineDec .year .from {
+    position: absolute;
+
+    bottom: -18px;
+    left: -45px;
+}
+
+// Experience //////////////////////////////////////////////////////////////////
+
+
+.experience .lineDecEx {
+    border-left: 2px solid var(--main-blue);
+    padding-left: 16px;
+    cursor: auto;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.experience .lineDecEx::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: -9px;
+    left: -6px;
+    border: 2px solid var(--main-blue);
+    border-radius: 50%;
+}
+
+.experience .lineDecEx::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    bottom: -9px;
+    left: -6px;
+    border: 2px solid var(--main-blue);
+    border-radius: 50%;
+}
+
+.experience .titleContentEx {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--main-blue);
+}
+
+.experience .lineDecEx .yearEx .toEx {
+    position: absolute;
+    top: -18px;
+    left: -45px;
+}
+
+.experience .lineDecEx .yearEx .fromEx {
+    position: absolute;
+    bottom: -18px;
+    left: -45px;
+}

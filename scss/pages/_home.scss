@@ -1,0 +1,272 @@
+// Home Page   
+
+// .overlay {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     background-color: #151515;
+//     opacity: 0.5;
+
+//   }
+
+.switcher {
+    width: 10px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.colorBlue {
+    background-color: $primary;
+}
+
+.colorRed {
+    background-color: $red;
+}
+
+.colorGreen {
+    background-color: $green;
+}
+
+.colorWarning {
+    background-color: $warning;
+}
+
+.colorPink {
+    background-color: $pink;
+}
+
+.colorPrimary {
+    background-color: $primary;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+}
+
+.bg-img {
+    object-fit: cover;
+    object-position: center center;
+    height: 100vh;
+}
+
+.div-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #151515;
+    opacity: 0.5;
+}
+
+.banner-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: nowrap;
+}
+
+.banner-content .nameHome {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 62px;
+    font-weight: 500;
+    color: #fff;
+
+    @include md {
+        font-size: 32px;
+    }
+}
+
+.banner-content .nameHome span {
+    color: var(--main-blue);
+}
+
+
+header .sidebar .nameTitle {
+    position: absolute;
+    left: 0px;
+    top: 222px;
+    font-size: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    text-wrap: nowrap;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    padding: 10px 0;
+}
+
+header .sidebar .nameTitle::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background-color: var(--main-blue);
+    z-index: -1;
+}
+
+
+header .linkSidebar {
+    border-bottom: 1px solid #202226;
+    text-align: start;
+    margin-left: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 33px;
+
+
+}
+
+header .linkSidebar a {
+    color: #777;
+    text-transform: uppercase;
+    margin-left: 8px;
+    font-size: 14px;
+    // padding: 0px 33px;
+    // width: 100%;
+}
+
+header .linkSidebar .activeLink {
+    color: #fff;
+
+}
+
+
+header li:hover a {
+    color: #fff;
+}
+
+// header li a:hover,
+// li a:focus {
+//     color: #fff;
+//     fill: #fff;
+// }
+
+// header .link-page {
+//     border-bottom: 1px solid #202226;
+// }
+
+.mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #17181B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    // margin-bottom: 30px;
+}
+
+
+header .mobile .header-mobile .iconToggle:after {
+    content: "\f0c9";
+    font-family: 'FontAwesome';
+    position: fixed;
+    right: 0px;
+    top: -10px;
+    padding-top: 10px;
+    width: 30px;
+    height: 50px;
+    color: #fff;
+    margin: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #3b3c43;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #17181B;
+    overflow: auto;
+    left: 0;
+    overflow-x: hidden;
+    text-align: center;
+    z-index: 999;
+    border-right: 1px solid #202226;
+    transform: translateX(0%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.showSidebar {
+    transform: translateX(-100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+header svg {
+    width: 22px;
+    height: 20px;
+}
+
+header svg path {
+    fill: #777;
+    stroke: #777;
+}
+
+header svg path:hover {
+    fill: #fff;
+}
+
+
+.options {
+    position: fixed;
+    top: 0px;
+    right: 200px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.theme-menu {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    width: 200px;
+    height: 220px;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateX(0%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.showThemeMenu {
+    transform: translateX(100%);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+span .optionsColors {
+    fill: #777;
+    width: 30px;
+    height: 30px;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg)
+    }
+}
