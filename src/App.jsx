@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast"
 import { AnimatePresence } from "framer-motion"
 
 
+
 function App() {
   const location = useLocation()
   return (

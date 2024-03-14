@@ -1,6 +1,5 @@
 import Typewriter from 'typewriter-effect';
 import imgHome from '../../public/images/home-bg.jpg'
-import { motion } from 'framer-motion'
 import PageAnimation from '../Components/PageAnimation';
 
 function Home() {
@@ -20,21 +19,23 @@ function Home() {
                     }
                 }
             > */}
-                  <PageAnimation>
+            <PageAnimation>
 
                 <div id='page'>
                     <section >
                         <div className='div-img '>
                             <img className='bg-img' src={imgHome} alt="img-Home" />
                         </div>
-                        <div className='banner-content '>
+                        <div className='banner-content  '>
                             <h2 className='nameHome fw-bold '>ABANOUB <span>MELAD</span> </h2>
-                            <div className='d-flex  justify-content-center  '>
-                                <p className=' fs-3  d-flex align-items-center  '>
-                                    <span >i am a </span>
+                            <div className='d-flex align-items-center  justify-content-center '>
+                                <p className='textTitle  m-auto   '>
+                                    Hi, I'm a
                                     <span
                                         style={{
-                                            borderBottom: ' 2px solid var(--main-blue)', margin: '10px',
+                                            display: "inline-block",
+                                            paddingBottom: '1px',
+                                            borderBottom: ' 2px solid var(--main-blue)', marginLeft: '4px',
                                             fontWeight: 'bold'
                                         }}
                                     >
@@ -43,7 +44,7 @@ function Home() {
                                                 autoStart: true,
                                                 loop: true,
                                                 delay: 20,
-                                                strings: ["Front end Developer.", "Freelancer"]
+                                                strings: ["Front end Developer.", "Freelancer."]
                                             }}
                                         />
                                     </span>
@@ -53,7 +54,7 @@ function Home() {
                         </div>
                     </section >
                 </div >
-                </PageAnimation>
+            </PageAnimation>
             {/* </motion.div> */}
 
         </>

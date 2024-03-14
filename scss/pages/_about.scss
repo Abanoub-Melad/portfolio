@@ -71,14 +71,22 @@
     letter-spacing: 1px;
     font-size: 14px;
     transition: all .3s ease;
-    z-index: 7;
+    // z-index: 227;
     font-weight: 500;
 
 }
 
 .btnMain .textA {
-    color: var(--main-blue) !important;
+    z-index: 2000;
+    color: var(--main-blue);
 }
+
+
+.btnMain:hover .textA {
+    color: $bg-white ;
+}
+
+
 
 .btnMain::before {
 
@@ -91,12 +99,12 @@
     opacity: 0;
     content: '';
     background-color: var(--main-blue);
-    z-index: -7;
+    z-index: -77;
 }
 
 .btnMain:hover {
-    color: #000;
-    z-index: 77;
+    color: $bg-white;
+    z-index: 99999;
 }
 
 .btnMain:hover::before {
@@ -117,7 +125,7 @@
     background-color: var(--main-blue);
     transform-origin: center center;
     transform: scale(0);
-    z-index: 1;
+    z-index: -100;
 }
 
 .btnMain:hover::after {
@@ -125,6 +133,6 @@
     transition: all .3s ease;
     transform-origin: left right;
     letter-spacing: 1px;
-    z-index: -3;
-
+    // z-index: -3;
+    // z-index: -200;
 }

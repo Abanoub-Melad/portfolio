@@ -1,6 +1,9 @@
 import PageAnimation from "../Components/PageAnimation";
 
+import { useState } from "react"
 function AboutMe() {
+  const cairo = useState([])
+  console.log(cairo)
   return (
     <>
       {/* <motion.div
@@ -96,7 +99,7 @@ function AboutMe() {
                   </li>
                   <li className="mb-3 lh-1">
                     <span className="title">Email :</span>
-                    <span className="value">abanoubmelad@gmail.com</span>
+                    <span className="value">abanoubmelad328@gmail.com</span>
                   </li>
                   <li className="mb-3 lh-1">
                     <span className="title">Phone :</span>
@@ -111,7 +114,7 @@ function AboutMe() {
                       className="textA"
                       download
                       target="blank"
-                      href="https://drive.google.com/file/d/1ZDIeidx6kL8Gd7bBOGqjCyHvrfcNyYj0/view?usp=drive_link"
+                      href="https://drive.google.com/file/d/1Bra___MfkyF-UQD7TZV4BfTSTdk9tc3y/view?usp=drive_link "
                     >
                       download resume
                     </a>

@@ -17,7 +17,7 @@
 }
 
 textarea {
-    height: 190px;
+    height: 150px;
 }
 
 .inputText:focus {
@@ -57,7 +57,20 @@ textarea {
     fill: var(--main-blue);
 }
 
-// .massageForm {
-//     color: var(--main-blue);
-//     margin: auto;
-// }
+.btnMain:hover {
+    color: $bg-white !important;
+}
+
+.callMe {
+    color: var(--main-blue) !important;
+    text-decoration: line-through #000;
+    letter-spacing: 1.5px;
+    transition: all .3s ease;
+}
+
+.callMe:hover {
+    color: var(--main-blue) !important;
+    transition: all .3s ease;
+    text-decoration: auto;
+
+}

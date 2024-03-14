@@ -17,7 +17,8 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#f6004c 10%, #000);
+    // background: linear-gradient(#f6004c 10%, #000);
+    background: linear-gradient(var(--main-blue) 10%, #000);
     transform: translateY(-100%);
     transition: all 0.3s ease-in-out;
     opacity: .85;
@@ -27,7 +28,7 @@
 .boxContainer:hover::before {
     transition: all 0.3s ease-in-out;
     transform: translateY(0);
-    background-color: red;
+    background-color: var(--main-blue);
 
 }
 
@@ -74,22 +75,30 @@
     transition: all 0.3s ease-in-out;
     z-index: 99;
 
+}
 
+.boxContainer .btnAction {
+    color: var(--main-blue);
 }
 
 .boxContainer .boxContent .btnView {
     margin-top: 40px;
     background: transparent;
-    border: 1px solid red;
+    border: 1px solid var(--main-blue);
     display: flex;
     width: 130px;
     position: relative;
     overflow: hidden;
+    z-index: -10;
 }
 
+.boxContainer .boxContent .btnView:hover .btnAction {
+    color: $bg-white !important;
+}
 
-.boxContainer .boxContent .btnView a {
-    color: $bg-white;
+.boxContainer .boxContent .btnView .btnAction {
+    color: var(--main-blue) !important;
+    z-index: 9999;
     margin: auto;
     padding: 10px 0px;
     font-size: 13px;
@@ -106,7 +115,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: #f6004c;
+    background: var(--main-blue);
     opacity: 0;
     transition: all 0.5s ease;
     z-index: -3;
@@ -120,7 +129,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: #f6004c;
+    background: var(--main-blue);
     opacity: 0;
     transform: scale(1);
     transition: all 0.5s ease;
@@ -140,7 +149,7 @@
     transform-origin: left right;
     left: 0;
     opacity: 1;
-    background-color: #f6004c;
+    background-color: var(--main-blue);
     transition: all 0.5s ease;
     z-index: -3;
 
@@ -150,3 +159,71 @@
     transition: all 0.3s ease-in-out;
     transform: translateY(-10%);
 }
+
+// ?????????????????????????????????????????????????????????????????????
+// .boxContainer {
+//     position: relative;
+//     height: 400px;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: start;
+//     z-index: 99;
+//     opacity: 1;
+//     transition: all 0.5s ease;
+
+//     // ////////////////////
+//     transform-style: preserve-3d;
+//     transform: perspective(1000px);
+//     perspective: translateX(110px);
+//     will-change: transform;
+//     transition: all 0.5s ease;
+//     transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+// }
+
+// .boxContainer::before {
+//     background-color: var(--main-blue);
+
+//     will-change: transform;
+//     transition: all 0.5s ease;
+//     transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+// }
+
+// .boxContainer:hover::after {
+//     position: absolute;
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     right: 0;
+//     // background: rgba(204, 204, 204, .0352941176);
+//     transition: all 0.5s ease;
+
+//     // background-color: rgba(0, 0, 0, 0.6);
+//     background-color: var(--main-blue);
+//     z-index: 2;
+//     opacity: 0.7;
+
+//     will-change: transform;
+//     transition: all 0.5s ease;
+//     transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+// }
+
+// .boxContainer:hover::after {
+//     opacity: .7;
+//     will-change: transform;
+//     transition: all 0.5s ease;
+//     transform: perspective(300px) rotat
+// }
+
+// .boxContainer .boxContent {
+//     position: absolute;
+//     bottom: -0px;
+//     left: 30px;
+//     transform: translateY(38%);
+//     transform: translateZ(25px);
+//     transition: all 0.3s ease-in-out;
+//     z-index: 99;
+
+// }

@@ -1,44 +1,59 @@
 import { motion } from 'framer-motion'
 const widthAnimation = {
     initial: {
-        width: 0,
-        // scale: 0.7,
-        opacity: 1,
+        width: "100%",
         overflow: "hidden",
-        // height: "100% ",
-        // y: "0",
+        opacity: 0.1,
+        scale: 1,
+
+
 
     },
     animate: {
+
         width: "100%",
-        // scale: 1,
-
+        // rotate: 360,
         overflow: "hidden",
-        // y: "60",
-        // height: "100% ",
-
 
         opacity: 1,
-        // x: "fit-content",
+        // x: 500,
+        // scale: 1,
     },
     exit: {
-        // y: "0",
 
+        x: "100%",
+        scale: 0.98,
         width: "100%",
         overflow: "hidden",
-        // scale: .7,
-        opacity: 0,
-        // y: window.innerWidth,
+        opacity: 0.1,
+
         x: -window.innerWidth,
+        // transition: { stiffness: 60,
+        //     damping: 100,
+        //     ease: "easeInOut",
+        //     duration: .3,  }
     }
+    // transition: {
+    //     width: "100%",
+    //     duration: 0.4,
+    //     overflow: "hidden",
+    //     scale: 1,
+
+    //     type: "spring",
+    //     stiffness: 10,
+    //     damping: 10,
+
+    // }
 }
 function PageAnimation({ children }) {
     return (
         <motion.div
             className='App'
             transition={{
+                stiffness: 60,
+                damping: 100,
                 ease: "easeInOut",
-                duration: .8
+                duration: .7 ,
             }}
             variants={widthAnimation}
 

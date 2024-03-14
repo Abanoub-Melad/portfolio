@@ -66,12 +66,37 @@ li {
 }
 
 .banner-content {
+    width: 100%;
     position: absolute;
     text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+.banner-content .textTitle {
+
+    overflow: hidden;
+    text-align: center;
     text-wrap: nowrap;
+    font-size: 28px;
+}
+
+@include sm {
+
+    .banner-content .textTitle {
+        font-size: 17px;
+        text-wrap: nowrap;
+
+    }
+
+    .banner-content .textTitle span {
+        font-size: 17px;
+        text-wrap: nowrap;
+
+    }
+
 }
 
 .banner-content .nameHome {
@@ -80,9 +105,12 @@ li {
     font-size: 62px;
     font-weight: 500;
     color: #fff;
+    text-wrap: nowrap;
 
     @include md {
-        font-size: 32px;
+        font-size: 29px;
+        text-wrap: nowrap;
+
     }
 }
 
@@ -135,14 +163,18 @@ header .linkSidebar a {
     text-transform: uppercase;
     margin-left: 8px;
     font-size: 14px;
-    // padding: 0px 33px;
-    // width: 100%;
+
 }
 
 header .linkSidebar .activeLink {
     color: #fff;
 
 }
+
+// header .linkSidebar .activeLinkSVG {
+//     fill: #fff;
+//     stroke: $bg-white;
+// }
 
 
 header li:hover a {
@@ -169,7 +201,6 @@ header li:hover a {
     justify-content: center;
     align-items: center;
     z-index: 999;
-    // margin-bottom: 30px;
 }
 
 
@@ -211,6 +242,13 @@ header .mobile .header-mobile .iconToggle:after {
     transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+
+@include md {
+    .showSidebarMobile {
+        transform: translateX(-100%);
+        transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
 
 header svg {
     width: 22px;
@@ -257,6 +295,8 @@ header svg path:hover {
     transform: translateX(100%);
     transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+
 
 span .optionsColors {
     fill: #777;

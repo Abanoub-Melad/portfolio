@@ -28,7 +28,10 @@ function Projects() {
                                         <h4>Web Academy</h4>
                                         <p>Html - Sass - BootStrap - JavaScript  - Swiper js</p>
                                         <div className='btnView '>
-                                            <a target="blank" href="https://abanoub-melad.github.io/Web-Academy./">
+                                            <a
+                                            className='btnAction'
+                                            
+                                            target="blank" href="https://abanoub-melad.github.io/Web-Academy./">
                                                 view project
                                             </a>
                                         </div>
@@ -45,7 +48,9 @@ function Projects() {
                                         <h4>spaceX</h4>
                                         <p>Html - CSS - JavaScript</p>
                                         <div className='btnView'>
-                                            <a target="blank" href="https://abanoub-melad.github.io/Falcon-6/">
+                                            <a
+                                            className='btnAction'
+                                            target="blank" href="https://abanoub-melad.github.io/Falcon-6/">
                                                 view project
                                             </a>
                                         </div>
@@ -63,7 +68,10 @@ function Projects() {
                                         <h4>Bundi</h4>
                                         <p>Html - CSS - BootStrap</p>
                                         <div className='btnView'>
-                                            <a target="blank" href="https://abanoub-melad.github.io/bondi-2021/">
+                                            <a
+                                            className='btnAction'
+                                            
+                                            target="blank" href="https://abanoub-melad.github.io/bondi-2021/">
                                                 view project
                                             </a>
                                         </div>
@@ -80,7 +88,11 @@ function Projects() {
                                         <h4> Playing Roll</h4>
                                         <p>Html - CSS - JavaScript</p>
                                         <div className='btnView'>
-                                            <a target="blank" href="https://abanoub-melad.github.io/Roll/">
+                                            
+                                            <a
+                                            className='btnAction'
+                                            
+                                            target="blank" href="https://abanoub-melad.github.io/Roll/">
                                                 view project
                                             </a>
                                         </div>
@@ -97,7 +109,10 @@ function Projects() {
                                         <h4>BeCome</h4>
                                         <p>Html - CSS - BootStrap</p>
                                         <div className='btnView'>
-                                            <a target="blank" href="https://abanoub-melad.github.io/Bootcamp_2020/">
+                                            <a 
+                                            className='btnAction'
+                                            
+                                            target="blank" href="https://abanoub-melad.github.io/Bootcamp_2020/">
                                                 view project
                                             </a>
                                         </div>
