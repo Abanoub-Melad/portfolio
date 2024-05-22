@@ -24,7 +24,8 @@ function Home() {
                 <div id='page'>
                     <section >
                         <div className='div-img '>
-                            <img className='bg-img' src={imgHome} alt="img-Home" />
+                            <img className='bg-img' src={imgHome} alt="img-Home" 
+                             loading="lazy"  decoding="async"/>
                         </div>
                         <div className='banner-content  '>
                             <h2 className='nameHome fw-bold '>ABANOUB <span>MELAD</span> </h2>

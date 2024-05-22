@@ -3,6 +3,7 @@ import imgBoundi from '..//../public/images/WhatsApp Image 2024-03-04 at 1.41.49
 import imgWeb from '..//../public/images/WhatsApp Image 2024-03-04 at 1.41.52 AM.jpeg'
 import imgSpaceX from '..//../public/images/WhatsApp Image 2024-03-04 at 1.41.51 AM.jpeg'
 import imgRoll from '..//../public/images/Screenshot (117).png'
+import market from '..//../public/images/WhatsApp Image 2024-05-22 at 5.23.46 PM.jpeg'
 import PageAnimation from '../Components/PageAnimation'
 function Projects() {
     return (
@@ -21,12 +22,33 @@ function Projects() {
                         <div className='row gy-4 '>
                             <div className='col-md-4 mainBox'>
                                 <div className='boxContainer'>
-                                    <img
+                                    <img  loading="lazy"  decoding="async"
+                                        className='imgBox'
+                                        src={market} alt='project-become' />
+                                    <div className='boxContent'>
+                                        <h4>Market</h4>
+                                        <p >HTML, CSS, Javascript, Swiper js, <br/>
+                                            React & Rudex RTK.</p>
+                                        <div className='btnView '>
+                                            <a
+                                            className='btnAction'
+                                            
+                                            target="blank" href="https://market-six-theta.vercel.app/">
+                                                view project
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='col-md-4 mainBox'>
+                                <div className='boxContainer'>
+                                    <img  loading="lazy"  decoding="async"
                                         className='imgBox'
                                         src={imgWeb} alt='project-become' />
                                     <div className='boxContent'>
                                         <h4>Web Academy</h4>
-                                        <p>Html - Sass - BootStrap - JavaScript  - Swiper js</p>
+                                        <p>HTML, CSS, Sass, Bootstrap,  <br/>Javascript & Swiper js.</p>
                                         <div className='btnView '>
                                             <a
                                             className='btnAction'
@@ -46,7 +68,7 @@ function Projects() {
                                         src={imgSpaceX} alt='project-SpaceX' />
                                     <div className='boxContent'>
                                         <h4>spaceX</h4>
-                                        <p>Html - CSS - JavaScript</p>
+                                        <p>HTML, CSS & Javascript.</p>
                                         <div className='btnView'>
                                             <a
                                             className='btnAction'
@@ -66,7 +88,7 @@ function Projects() {
                                         src={imgBoundi} alt='project-Boundi' />
                                     <div className='boxContent'>
                                         <h4>Bundi</h4>
-                                        <p>Html - CSS - BootStrap</p>
+                                        <p>HTML, CSS & BootStrap.</p>
                                         <div className='btnView'>
                                             <a
                                             className='btnAction'
@@ -86,7 +108,7 @@ function Projects() {
                                         src={imgRoll} alt='project-become' />
                                     <div className='boxContent'>
                                         <h4> Playing Roll</h4>
-                                        <p>Html - CSS - JavaScript</p>
+                                        <p>HTML, CSS & Javascript.</p>
                                         <div className='btnView'>
                                             
                                             <a
@@ -107,7 +129,7 @@ function Projects() {
                                         src={imgBeCome} alt='project-become' />
                                     <div className='boxContent'>
                                         <h4>BeCome</h4>
-                                        <p>Html - CSS - BootStrap</p>
+                                        <p>HTML, CSS & Javascript.</p>
                                         <div className='btnView'>
                                             <a 
                                             className='btnAction'

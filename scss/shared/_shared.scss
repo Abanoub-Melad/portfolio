@@ -9,6 +9,12 @@
         padding-top: 70px;
     }
 }
+@media (min-width: 1380px) {
+    .sectionAll {
+    max-width: 1300px;
+    
+}
+}
 
 .sectionAll .allTitle {
     font-size: 40px;

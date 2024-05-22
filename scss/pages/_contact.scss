@@ -63,14 +63,13 @@ textarea {
 
 .callMe {
     color: var(--main-blue) !important;
-    text-decoration: line-through #000;
     letter-spacing: 1.5px;
-    transition: all .3s ease;
+    // transition: all .3s ease;
 }
 
-.callMe:hover {
-    color: var(--main-blue) !important;
-    transition: all .3s ease;
-    text-decoration: auto;
+// .callMe:hover {
+//     color: var(--main-blue) !important;
+//     transition: all .3s ease;
+//     text-decoration: auto;
 
-}
+// }

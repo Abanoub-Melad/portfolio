@@ -129,7 +129,7 @@ function Sidebar() {
                         }`}
                 >
                     <h4 className="nameTitle  text-light">abanoub melad</h4>
-                    <img className="w-100 " src={myPhotoHome} />
+                    <img className="w-100 " src={myPhotoHome}  alt="" loading="lazy"  decoding="async" />
                     <ul className="p-0 m-0  ">
                         <li className="linkSidebar">
 

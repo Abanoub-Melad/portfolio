@@ -58,12 +58,9 @@ function Contact() {
                                 className="allIcon"
                                 version="1.1"
                                 xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
                                 x="0px"
                                 y="0px"
                                 viewBox="0 0 256 256"
-                                enable-background="new 0 0 256 256"
-                                xml:space="preserve"
                             >
                                 <metadata>
                                     Svg Vector Icons : http://www.onlinewebfonts.com/icon{" "}
@@ -99,7 +96,7 @@ function Contact() {
                                             <input
                                                 required
                                                 type="email" name="email" className="inputText  " />
-                                            <label className="labelText">Email</label>
+                                            <label   className="labelText">Email</label>
                                         </div>
                                     </div>
                                     <div className="col-md-12  ">
@@ -152,8 +149,8 @@ function Contact() {
                                 <span>
                                     <svg
                                         className="iconContact"
-                                        version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        viewBox="0 0 494.914 494.914" xml:space="preserve">
+                                        version="1.1"  xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 494.914 494.914" >
                                         <g>
                                             <path d="M285.813,266.034v36.483c91.16,9.032,145.408,40.674,145.408,64.427c0,27.993-75.088,67.024-197.362,67.024
 		S36.514,394.937,36.514,366.944c0-23.93,54.996-55.856,147.32-64.635v-36.466C87.701,274.843,0,309.59,0,366.944
@@ -167,7 +164,7 @@ function Contact() {
 		c5.927-2.868,9.686-8.859,9.686-15.438V54.908C494.914,48.981,491.855,43.485,486.869,40.363z"/>
                                         </g>
                                     </svg>                          </span>
-                                <h5>15 Ezbet El Nakhl</h5>
+                                <h5>Egypt, Cairo</h5>
                             </div>
 
                             <div className="col-md-4 my-4 ">

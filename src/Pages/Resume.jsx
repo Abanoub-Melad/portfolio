@@ -54,7 +54,8 @@ function Resume() {
                                 <ul className='containerUl mt-5' >
                                     <li className='lineDecEx'>
                                         <div className='contentExperience ps-3'>
-                                            <h5>Technical training</h5>
+                                            <h5>Technical training - Five Months </h5>
+                                            {/* <h5>Technical training</h5> */}
                                             <span className='titleContentEx'>
                                                 <a
                                                     target='blank'
