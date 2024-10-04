@@ -1,4 +1,6 @@
 import imgBeCome from '..//../public/images/Screenshot (115).png'
+import imgGit from '..//../public/images/download (1).png'
+
 import imgBoundi from '..//../public/images/WhatsApp Image 2024-03-04 at 1.41.49 AM.jpeg'
 import imgWeb from '..//../public/images/WhatsApp Image 2024-03-04 at 1.41.52 AM.jpeg'
 import imgSpaceX from '..//../public/images/WhatsApp Image 2024-03-04 at 1.41.51 AM.jpeg'
@@ -24,9 +26,29 @@ function Projects() {
                                 <div className='boxContainer'>
                                     <img  loading="lazy"  decoding="async"
                                         className='imgBox'
+                                        src={imgGit} alt='project-become' />
+                                    <div className='boxContent'>
+                                        <h4>Backend E-commerce </h4>
+                                        <p >Nodejs & Express, MongoDB & JWT & Architecture MVC.</p>
+                                        <div className='btnView '>
+                                            <a
+                                            className='btnAction'
+                                            
+                                            target="blank" href="https://github.com/Abanoub-Melad/E-commerce_Backend_Node">
+                                                view project
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='col-md-4 mainBox'>
+                                <div className='boxContainer'>
+                                    <img  loading="lazy"  decoding="async"
+                                        className='imgBox'
                                         src={market} alt='project-become' />
                                     <div className='boxContent'>
-                                        <h4>Market</h4>
+                                        <h4>Frontend Market</h4>
                                         <p >HTML, CSS, Javascript, Swiper js, <br/>
                                             React & Rudex RTK.</p>
                                         <div className='btnView '>

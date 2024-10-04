@@ -61,8 +61,8 @@ function Resume() {
                                                     target='blank'
                                                     href='https://www.neoneg.com/'>NEON Company</a></span>
                                             <p >I underwent technical training at   <a
-                                                    target='blank'
-                                                    href='https://www.neoneg.com/'>NEON Company</a> where I gained hands-on experience in various aspects of web development.</p>
+                                                target='blank'
+                                                href='https://www.neoneg.com/'>NEON Company</a> where I gained hands-on experience in various aspects of web development.</p>
                                         </div>
                                         <span className='yearEx'>
                                             <span className='toEx'>2024</span>
@@ -78,6 +78,24 @@ function Resume() {
                                     <h3 className="titleServices ms-auto">EDUCATION</h3>
                                 </div>
                                 <ul className='containerUl mt-5' >
+                                    <li className='lineDec'>
+                                        <div className='contentResume ps-3'>
+                                            <h5>Digital Egypt Builders Initiative (DEBI)
+                                            </h5>
+                                            <span className='titleContentEx'>
+                                                <a
+                                                    target='blank'
+                                                    href='https://depi.gov.eg/'>DEBI</a></span>
+                                            {/* <span className='titleContent'> Codevolution - Youtube</span> */}
+                                            <p className='prgContent'>Ministry of Communications and Information Technology
+                                                Certificate in MERN Stack Development (MongoDB, Express.js, React, Node.js)
+                                                .</p>
+                                        </div>
+                                        <span className='year'>
+                                            <span className='to'>2025</span>
+                                            <span className='from'>2024</span>
+                                        </span>
+                                    </li>
                                     <li className='lineDec'>
                                         <div className='contentResume ps-3'>
                                             <h5>Modern React with Redux  </h5>
@@ -97,7 +115,7 @@ function Resume() {
                                         </div>
                                         <span className='year'>
                                             <span className='to'>2023</span>
-                                            <span className='from'>2022</span>
+                                            <span className='from'>2023</span>
                                         </span>
                                     </li>
                                     <li className='lineDec'>

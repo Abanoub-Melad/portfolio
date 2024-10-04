@@ -45,7 +45,7 @@ function Home() {
                                                 autoStart: true,
                                                 loop: true,
                                                 delay: 20,
-                                                strings: ["Front end Developer.", "Freelancer."]
+                                                strings: ["MERN Stack Developer.", "Freelancer."]
                                             }}
                                         />
                                     </span>

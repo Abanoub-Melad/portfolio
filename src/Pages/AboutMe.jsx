@@ -62,21 +62,14 @@ function AboutMe() {
                 </g>
               </svg>
             </div>
-            <div className="aboutPrg row   ">
+            <div className="aboutPrg row">
               <div className="col-md-7 ">
-                <h2 className="pb-3">Front-End Developer</h2>
+                {/* <h2 className="pb-3">Front-End Developer</h2> */}
+                <h2 className="pb-3">MERN Stack Developer</h2>
                 <p className=" lh-lg">
-                  Let me give you a short intro about myself. I’m a prolific
-                  front end developer from Egypt. who cares deeply about user
-                  experience. intense passion for UI design and new
-                  technologies, I learned Web Development from various online
-                  courses to gain knowledge. I’m always seeking for new
-                  challenges that allows me grow professionally, while being
-                  able to utilize my skills . In my developing journey, I have
-                  worked on several projects, whether through companies or
-                  freelancers. My main focus is to bring profit to both the
-                  business owner and customer.
-                </p>
+                Junior MERN Stack Developer with experience in building full-stack applications using MongoDB, Express.js, React.js, and Node.js. Graduate of the Digital Egypt Pioneers Program, an initiative by the Ministry of Communications and Information Technology. Proficient in modern JavaScript (ES6+), RESTful APIs, and developing responsive, scalable applications. Committed to continuous learning and eager to contribute to impactful projects.
+
+</p>
               </div>
               <div className="col-md-4 offset-md-1">
                 <h2 className="pb-3">Personal Information</h2>
